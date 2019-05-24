@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 4002;
+const port = 4001;
 app.use(express.json());
 require("dotenv").config();
 const massive = require("massive");
@@ -12,9 +12,13 @@ massive(process.env.CONNECTION_STRING).then(db => {
 
 app.get("/api/inventory", (req, res) => {
   const db = req.app.get("db");
-  db.get_inventory().then(products => {
-    res.status(200).send(products);
-  });
+  db.get_inventory()
+    .then(products => {
+      res.status(200).send(products);
+    })
+    .catch(err => {
+      console.log(err);
+    });
 });
 
 app.post("/api/inventory", (req, res) => {

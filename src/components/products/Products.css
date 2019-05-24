@@ -1,0 +1,29 @@
+.allProducts {
+  height: 85vh;
+  width: 50vw;
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product {
+  height: 40vh;
+  width: 30vw;
+  background-color: #d34735;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.inventoryButtons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.productImg {
+  height: 200px;
+  width: 200px;
+}
