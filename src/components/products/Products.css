@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-.product {
+.whiteBar {
   height: 40vh;
   width: 30vw;
   background-color: #d34735;
@@ -16,6 +16,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.product {
+  margin-top: 20px;
+  height: 43vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .inventoryButtons {

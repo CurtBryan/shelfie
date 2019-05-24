@@ -1,0 +1,22 @@
+.inputsBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #3ad886;
+  height: 300px;
+  width: 500px;
+}
+
+.testImg {
+  height: 200px;
+  width: 200px;
+}
+
+input {
+  width: 250px;
+}
+
+button {
+  width: 250px;
+}
